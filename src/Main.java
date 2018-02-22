@@ -10,7 +10,7 @@ public class Main {
         PrintWriter writeSPZ = new PrintWriter("spz.txt");
         PrintWriter writeIDNum = new PrintWriter("rx.txt");
         PrintWriter writeMACAdress = new PrintWriter("ip.txt");
-        Pattern IDNum = Pattern.compile("^\\d{2}(([0][1-9])|([1][012])|([5][1-9])|([6][012]))[0-3]\\d[\\/]?\\d{4}$");
+        Pattern IDNum = Pattern.compile("^\\d{2}(([0][1-9])|([1][012])|([5][1-9])|([6][012]))([0][1-9]|[12][0-9]|[3][01])[\\/]?\\d{4}$");
         Pattern SPZ = Pattern.compile("^[A-Z]{2}\\d{3}[A-Z]{2}$");
         Pattern MAC = Pattern.compile("^([A-F0-9][A-F0-9][:]){5}[A-F0-9][A-F0-9]$");
 
