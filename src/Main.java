@@ -8,8 +8,8 @@ public class Main {
         String fileName = "rawText.txt";
         String line = null;
         PrintWriter writeSPZ = new PrintWriter("spz.txt");
-        PrintWriter writeIDNum = new PrintWriter("idnum.txt");
-        PrintWriter writeMACAdress = new PrintWriter("ipAdress.txt");
+        PrintWriter writeIDNum = new PrintWriter("rx.txt");
+        PrintWriter writeMACAdress = new PrintWriter("ip.txt");
         Pattern IDNum = Pattern.compile("^\\d{2}(([0][1-9])|([1][012])|([5][1-9])|([6][012]))[0-3]\\d[\\/]?\\d{4}$");
         Pattern SPZ = Pattern.compile("^[A-Z]{2}\\d{3}[A-Z]{2}$");
         Pattern MAC = Pattern.compile("^([A-F0-9][A-F0-9][:]){5}[A-F0-9][A-F0-9]$");
